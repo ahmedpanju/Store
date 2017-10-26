@@ -1,0 +1,27 @@
+<HTML>
+    <head>
+        <% include partials/head3.ejs %>
+    </head>
+    <body>
+        <% include partials/first_navbar.ejs %>
+        <% include partials/second_navbar.ejs %>
+        
+        <div class="container">
+            <div class="image_panel" style="background-image: url('/images/medicine<%= products[0].image %>');">
+                
+            </div>
+            <div class="product_info">
+                <h1><%= bob %></h1> 
+                <p><%= products[0].description %></p><hr>
+                <h2>$<%= products[0].price %></h2>
+                <h1 style="font-size: 30px;">Quantity:</h1>
+                <div class="quantity">
+                    <button id="minus" onclick="subtract()"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                    <div class="quantity_panel"><h1 id="quantity_number">1</h1></div>
+                    <button id="plus" onclick="add()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <button class="add_cart">Add to Cart<i class="fa fa-plus" style="margin-left: 10px;"aria-hidden="true"></i></button>
+                </div>    
+            </div>
+        </div>
+    </body>
+</HTML>

@@ -1,0 +1,56 @@
+{
+  "products": [{
+    "category" : "Medicine",
+    "number" : "1",
+    "name" : "Advil",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate lectus non porttitor rhoncus. Fusce nibh arcu, mollis eu leo eu, porta iaculis augue.",
+    "price" : "10",
+    "image" : "0.jpg"
+  },
+
+  {
+    "category" : "Medicine",
+    "number" : "2",
+    "name" : "Tylenol",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate lectus non porttitor rhoncus. Fusce nibh arcu, mollis eu leo eu, porta iaculis augue.",
+    "price" : "10",
+    "image" : "1.jpeg"
+  },
+
+  {
+    "category" : "Medicine",
+    "number" : "3",
+    "name" : "Gravol",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate lectus non porttitor rhoncus. Fusce nibh arcu, mollis eu leo eu, porta iaculis augue.",
+    "price" : "10",
+    "image" : "2.jpeg"
+  },
+
+  {
+    "category" : "Medicine",
+    "number" : "4",
+    "name" : "Pepto-Bismol",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate lectus non porttitor rhoncus. Fusce nibh arcu, mollis eu leo eu, porta iaculis augue.",
+    "price" : "10",
+    "image" : "3.jpg"
+  },
+
+  {
+    "category" : "Medicine",
+    "number" : "5",  
+    "name" : "Aleve",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate lectus non porttitor rhoncus. Fusce nibh arcu, mollis eu leo eu, porta iaculis augue.",
+    "price" : "10",
+    "image" : "4.jpeg"
+  },
+
+  {
+    "category" : "Medicine",
+    "number" : "6",
+    "name" : "Claritin",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate lectus non porttitor rhoncus. Fusce nibh arcu, mollis eu leo eu, porta iaculis augue.",
+    "price" : "10",
+    "image" : "5.jpg"
+  }]
+
+}

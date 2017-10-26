@@ -1,0 +1,94 @@
+<div id="login_modal">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    <div class="modal_content">
+        <h1>Login</h1>
+        <form class="login" method="post">
+            <label>Email:</label><br>
+            <input type="text" name="email"><br><br>
+            <label>Password:</label><br>
+            <input type=password name="password"><br><br>
+            <input type="checkbox" name="remember" value="remember"><label style="font-size: 20px;">Remember Me</label><br><br>
+            <input type="submit" value="Login" class="login_button">
+        </form>
+    </div>
+</div>
+
+
+<style type="text/css">
+    #login_modal {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.4);
+        overflow: hidden;
+        z-index: 1;
+    }
+    
+    #login_modal i {
+        font-size: 40px;
+        color: white;
+        position: absolute;
+        cursor: pointer;
+        top: 10%;
+        left: 20%
+    }
+    
+    .modal_content {
+        width: 35%;
+        margin: 5% auto;
+        height: 500px;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        position: relative;
+    }
+    
+    .modal_content h1 {
+        font-family: 'Roboto', sans-serif;
+        color: #0059b3;
+        text-align: center;
+        position: relative;
+        margin-top: 60px;
+        font-size: 90px;
+    }
+    
+    .modal_content form {
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        transform: translate(-50%, -10%);
+    }
+    
+    .modal_content label {
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+    }
+    
+    .modal_content input {
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        
+    }
+    
+    .modal_content .login_button {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        padding: 20px;
+    }
+</style>
+
+<script>
+    
+    $(document).ready(function(){
+        $('.login').click(function(){
+            $('#login_modal').fadeIn();    
+        });  
+        $('i').click(function(){
+            $('#login_modal').fadeOut();    
+        });
+    });
+
+</script>

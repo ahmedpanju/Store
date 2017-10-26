@@ -1,0 +1,55 @@
+<div class="sidebar">
+    <ul class="container_list">
+        <p>Categories</p>
+        <li>Medicine <i class="fa fa-chevron-down" aria-hidden="true" style="cursor: pointer;"></i></li>
+        <ul class="list">
+            <% for (var i = 0; i < products.length; i++) { %>
+                <a><li><%= products[i].name %></li></a>
+            <% } %>
+        </ul>
+    </ul>
+</div>
+
+<style>
+    .sidebar {
+        float: left;
+        height: 250vh;
+        width: 20%;
+        background-color: #e6e6e6;
+        margin-top: 5px;
+    }
+    
+    .sidebar ul {
+        list-style-type: none;
+    }
+    
+    .sidebar .container_list p {
+        font-family: Arial;
+        font-size: 20px;
+    }
+    
+    .sidebar .container_list li {
+        font-family: Arial;
+    }
+    
+    .sidebar .list li {
+        font-family: 'Roboto', sans-serif;
+        margin: 7px;
+    }
+    
+    li i {
+        font-size: 5px;
+    }
+    
+    .none {
+        display: none;
+    }
+</style>
+
+<script>
+    $(document).ready(function(){
+        $('i').click(function(){
+            $('.list').toggleClass('none');        
+        });   
+    });
+</script>

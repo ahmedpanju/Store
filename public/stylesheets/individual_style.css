@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border-bottom: 1px solid black;
+    width: 90%;
+    margin: auto;
+    height: 65vh;
+}
+
+.container .image_panel {
+    float: left;
+    width: 35%;
+    height: 50vh;
+    margin-top: 50px;
+    margin-left: 100px;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.container .product_info {
+    margin-top: 50px;
+    height: 50vh;
+    width: 50%;
+    float: right;
+}
+
+.container .product_info h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    margin: 0;
+}
+
+.container .product_info p {
+    width: 80%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container .product_info h2 {
+    color: #0059b3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+
+.container .product_info .quantity {    
+    position: absolute;
+    top: 71%;
+    right: 5%;
+}
+
+.container .product_info .quantity button {
+    font-size: 20px;
+    border: none;
+    padding: 20px;
+    float: left;
+    cursor: pointer;
+    outline: none;
+}
+
+#minus {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #bfbfbf;
+}
+
+#plus {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #bfbfbf;
+}
+
+.container .product_info .quantity_panel {
+    width: 70px;    
+    height: 58px;
+    background-color: white;
+    float: left;
+    text-align: center;
+}
+
+.container .product_info .add_cart {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    float: right;
+    bottom: 42px;
+    background-color: #0059b3;
+    color: white;
+    border-radius: 10px; 
+    position: relative;
+    top: 0px;
+    margin-left: 100px;
+}

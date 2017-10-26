@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <% include partials/head.ejs %>
+    </head>
+    <body>
+        <% include partials/loginmodal.ejs %>
+        <% include partials/signupmodal.ejs %>
+        <% include partials/first_navbar.ejs%>
+        <% include partials/second_navbar.ejs%>
+        <div class="jumbotron">
+            <div class="slide fade" style="background-image: url('/images/jumbotron_one.jpg'); display: block;">
+                <div class="text_container" style="width: 40%; margin: auto; padding-top: 50px; padding-left: 30px; padding-right: 30px; background-color: rgba(166, 166, 166, 0.3)">
+                    <h1 style="font-family: 'Roboto', sans-serif; font-size: 50px;">Find what you need, at an affordable price</h1>
+                </div>
+            </div>
+            <div class="slide fade" style="background-image: url('/images/jumbotron_two.jpeg');">
+            </div>
+            <div class="slide fade" style="background-image: url('/images/jumbotron_three.jpeg');">
+            </div>
+                
+            <button class="jumbotron_button" id="first" onclick="plusSlides(-1)">&#60;</button>
+            <button class="jumbotron_button" id="second" onclick="plusSlides(1)">&#62;</button>
+        </div>
+        <div class="deals">
+            <h1>Categories</h1>
+            <div class="row">
+                <% for (var i = 0; i < 4; i++) { %>
+                <div class="product">
+                    <a href="/category/1"><h3><%= products[i].category %></h3></a>
+                    <ul>
+                        <li><a>Lorem ipsum dolor</a></li>
+                        <li><a>Lorem ipsum dolor</a></li>
+                        <li><a>Lorem ipsum dolor</a></li>
+                        <li><a>Lorem ipsum dolor</a></li>
+                        <li><a>Lorem ipsum dolor</a></li>
+                        <li><a>Lorem ipsum dolor</a></li>
+                    </ul>
+                </div>
+                <% } %>
+            </div>
+        </div>
+        <ul class="footer">
+        
+        </ul>
+    </body>
+</html>

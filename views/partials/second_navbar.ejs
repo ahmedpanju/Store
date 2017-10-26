@@ -1,0 +1,83 @@
+<ul class="navbar_top">
+            <li><a href="/"><h1>UHCP</h1><span style="position: absolute; left: 90%; font-family: 'Roboto', sans-serif;">Store</span></a></li>
+            <li style="margin-left: 175px;"><a><input type="text" placeholder="Search for your product"></a></li>   
+            <li><a><button class="categories">Categories</button></a></li>
+            <li><button class="search">Search</button></li>
+        </ul>  
+
+<style>
+    .navbar_top {
+    margin: 0;  
+    list-style-type: none;
+    height: 15vh;
+    margin-top: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    position: relative;
+}
+
+.navbar_top li{
+    float: left;
+}
+
+.navbar_top li a {
+    display: block;
+    position: relative;
+    top: 60%;
+    transform: translate(0%, 60%);
+    text-decoration: none;
+}
+
+.navbar_top li a h1 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #0059b3;
+    margin-left: 100px;
+}
+
+.navbar_top li a h1::first-letter {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.navbar_top li a input {
+    padding: 10px;
+    width: 500px;
+    font-size: 15px;
+    border: 1px solid #a6a6a6;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    bottom: 5px;
+    margin-right: 2px;
+}
+
+.navbar_top li a .categories {
+    width: 150px;
+    margin-right: 20px;
+    border-radius: 0px;
+    background-color: white;
+    box-shadow: none;
+    border: 1px solid #a6a6a6;
+    height: 50px;
+    position: relative;
+    bottom: 5px;
+    font-size: 20px;
+    color: #a6a6a6;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar_top li .search {
+    border: none;
+    background-color: rgb(0, 128, 43);
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: Arial;
+    position: relative;
+    transform: translate(10%, 38%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+}
+</style>

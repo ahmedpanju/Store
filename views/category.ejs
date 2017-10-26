@@ -1,0 +1,30 @@
+<HTML>
+    <head>
+        <% include partials/head2.ejs %>
+    </head>
+    <body>
+        <% include partials/loginmodal.ejs %>
+        <% include partials/signupmodal.ejs %>
+        <% include partials/first_navbar.ejs %>
+        <% include partials/second_navbar.ejs %>
+        <% include partials/sidebar.ejs %>
+      
+        <div class="container">
+            <h1>Showing Results For <%= header %></h1>
+            <hr>
+            <% for (var i = 0; i < products.length; i++) { %>
+                <a href="/category/1/<%= products[i].name %>">
+                    <div class="row">
+                        <div class="image_panel" style="background-image: url('/images/medicine<%= products[i].image %>');">
+                        </div>
+                        <h3><%= products[i].name %></h3>   
+                        <p><%= products[i].description %></p>
+                        <h2>$<%= products[i].price %></h2>
+                        <button class="add_cart">Add to Cart<i class="fa fa-plus" style="margin-left: 10px;"aria-hidden="true"></i></button>
+                    </div>
+                </a>    
+            <% } %>
+        </div>
+        
+    </body>
+</HTML>
