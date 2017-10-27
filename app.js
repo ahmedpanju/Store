@@ -19,10 +19,8 @@ app.get('/', routes.home);
 
 app.get('/category/:category?', routes.category);
 
-app.get('/category/:category?/:name?', routes.individual);
+app.get('/category/:category?/:name?/:description?/:image?/:price?', routes.individual);
 
 app.get('*', routes.notFound);
 
-app.listen(3000, function() {
-    console.log("This application is running on LocalHost: 3000");
-}); 
+app.listen(process.env.PORT || 3000);

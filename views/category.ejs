@@ -13,7 +13,7 @@
             <h1>Showing Results For <%= header %></h1>
             <hr>
             <% for (var i = 0; i < products.length; i++) { %>
-                <a href="/category/1/<%= products[i].name %>">
+                <a href="/category/1/<%= products[i].name %>/<%= products[i].description %>/<%= products[i].image %>/<%= products[i].price %>">
                     <div class="row">
                         <div class="image_panel" style="background-image: url('/images/medicine<%= products[i].image %>');">
                         </div>

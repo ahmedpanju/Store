@@ -7,13 +7,13 @@
         <% include partials/second_navbar.ejs %>
         
         <div class="container">
-            <div class="image_panel" style="background-image: url('/images/medicine<%= products[0].image %>');">
+            <div class="image_panel" style="background-image: url('/images/medicine<%= image %>');">
                 
             </div>
             <div class="product_info">
-                <h1><%= bob %></h1> 
-                <p><%= products[0].description %></p><hr>
-                <h2>$<%= products[0].price %></h2>
+                <h1><%= name %></h1> 
+                <p><%= description %></p><hr>
+                <h2>$<%= price %></h2>
                 <h1 style="font-size: 30px;">Quantity:</h1>
                 <div class="quantity">
                     <button id="minus" onclick="subtract()"><i class="fa fa-minus" aria-hidden="true"></i></button>

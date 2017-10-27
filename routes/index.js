@@ -39,15 +39,23 @@ exports.individual = function(req, res) {
     
     var category = req.params.category;
     
-    var product = req.params.name;
+    var product_name = req.params.name;
+    
+    var product_description = req.params.description;
+    
+    var product_image = req.params.image;
 
+    var product_price = req.params.price;
     
     res.render('individual', {
         style: "individual_style.css",    
         logic: "individual_logic.js",
         products: products,
-        title: "Fick this",
-        bob: product
+        title: "UHCP | " + product_name,
+        name: product_name,
+        description: product_description,
+        image: product_image, 
+        price: product_price
     });
 }
 
